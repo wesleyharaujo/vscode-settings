@@ -1,0 +1,153 @@
+{
+    // ------- Window -------
+    // "window.menuBarVisibility": "toggle", // rockedseat  
+
+    // ------- Workbanch ------- 
+    "editor.minimap.enabled": false,
+    "workbench.editorAssociations": {
+        "*.db": "default"
+    },
+    "workbench.startupEditor": "none",
+    "workbench.iconTheme": "material-icon-theme",
+    // "workbench.productIconTheme": "fluent-icons", // rockedseat 
+
+    // ------- Workspace -------
+    "security.workspace.trust.untrustedFiles": "open",
+
+    // ------- Editor -------
+    "editor.suggestSelection": "first",
+    "editor.unicodeHighlight.ambiguousCharacters": false,
+    "editor.linkedEditing": true,
+    "editor.tabSize": 2,
+    "editor.fontSize": 16,
+    "editor.lineHeight": 26,
+    "editor.rulers": [80, 120], // rockedseat 
+    "editor.codeActionsOnSave": {
+        "source.fixAll.eslint": true
+    },
+    "diffEditor.ignoreTrimWhitespace": false,
+    // "editor.semanticHighlighting.enabled": false,
+    // "editor.rulers": [80, 120],
+
+    // ------- Terminal -------
+    "terminal.integrated.fontFamily": "MesloLGS NF",
+    "terminal.integrated.fontSize": 14,
+    "terminal.integrated.showExitAlert": false, // rockedseat 
+
+    // ------- Explorer ------- 
+    "explorer.confirmDragAndDrop": false,
+
+    // ------- HTML -------
+    // ------- CSS -------
+
+    // ------- JS -------
+    "javascript.updateImportsOnFileMove.enabled": "always", // rockedseat 
+
+    // ------- TS -------
+    "typescript.tsserver.log": "verbose", // rockedseat 
+
+    // ------- GIT -------
+    "git.enableSmartCommit": true,
+    "git.ignoreRebaseWarning": true,
+    "git.autofetch": true,
+
+    // ------- Files Associations  -------
+    "files.associations": { // rockedseat 
+        ".sequelizerc": "javascript",
+        ".stylelintrc": "json",
+        ".prettierrc": "json",
+        "*.tsx": "typescriptreact"
+    },
+    
+    // ------- Material Icon Theme (MIT)
+    "material-icon-theme.activeIconPack": "nest", // rockedseat 
+
+    //  ------- MIT Folders Config -------
+    "material-icon-theme.folders.associations": { // rockedseat 
+        "infra": "app",
+        "entities": "class",
+        "domain": "class",
+        "schemas": "class",
+        "typeorm": "database",
+        "repositories": "mappings",
+        "http": "container",
+        "migrations": "tools",
+        "modules": "components",
+        "implementations": "core",
+        "dtos": "typescript",
+        "fakes": "mock",
+        "websockets": "pipe",
+        "protos": "pipe",
+        "grpc": "pipe",
+        "providers": "include",
+        "subscribers": "messages",
+        "useCases": "controller",
+        "kafka": "scripts",
+        "mappers": "meta",
+        "_shared": "shared",
+        "eslint-config": "tools",
+        "kube": "kubernetes"
+    },
+
+    //  ------- MIT Icons Config -------
+    "material-icon-theme.files.associations": { // rockedseat 
+        "ormconfig.json": "database",
+        "tsconfig.json": "tune",
+        "*.proto": "3d",
+        "*.webpack.js": "webpack"
+    },
+
+    // ------- Code Spell Checker -------
+    "cSpell.enableFiletypes": [ // rockedseat 
+        "!asciidoc",
+        "!c",
+        "!cpp",
+        "!csharp",
+        "!go",
+        "!handlebars",
+        "!haskell",
+        "!jade",
+        "!java",
+        "!latex",
+        "!php",
+        "!pug",
+        "!python",
+        "!restructuredtext",
+        "!rust",
+        "!scala",
+        "!scss"
+    ],
+    "cSpell.language": "en,pt", // rockedseat 
+    "cSpell.userWords": [ // rockedseat 
+        "chakra",
+        "middlewares",
+        "prefetch",
+        "rocketseat"
+    ],
+
+
+    // "material-icon-theme.folders.associations": {
+    //     "infra": "app",
+    //     "entities": "class",
+    //     "domain": "class",
+    //     "schemas": "class",
+    //     "typeorm": "databasse",
+    //     "repositories": "mappings",
+    //     "http": "container",
+    //     "migrations": "tools",
+    //     "modules": "components",
+    //     "implementations": "core",
+    //     "dtos": "typescript",
+    //     "fakes": "mock",
+    //     "websockets": "pipe",
+    //     "protos": "pipe",
+    //     "grpc": "pipe",
+    //     "providers": "include",
+    //     "subscribers": "messages",
+    //     "useCases": "controller",
+    //     "kafka": "scripts",
+    //     "mappers": "meta",
+    //     "_shared": "shared",
+    //     "eslint-config": "tools"
+    // },
+}
