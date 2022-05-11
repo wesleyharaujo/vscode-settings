@@ -1,6 +1,17 @@
 {
-    // ------- Window -------
-    // "window.menuBarVisibility": "toggle", // rockedseat  
+    // ------- Others -------
+    "breadcrumbs.enabled" : true,
+    "security.workspace.trust.untrustedFiles" : "newWindow",
+    "files.exclude" : {
+        "**\/CVS" : true,
+        "**\/.DS_Store" : true,
+        "**\/.hg" : true,
+        "**\/.svn" : true,
+        "**\/.git" : true
+    },
+    "tabnine.experimentalAutoImports" : true,
+    "screencastMode.onlyKeyboardShortcuts" : true,
+    "window.zoomLevel": 1,
 
     // ------- Workbanch ------- 
     "editor.minimap.enabled": false,
@@ -9,42 +20,74 @@
     },
     "workbench.startupEditor": "none",
     "workbench.iconTheme": "material-icon-theme",
-    // "workbench.productIconTheme": "fluent-icons", // rockedseat 
+    "workbench.productIconTheme": "fluent-icons", // rockedseat
+    "workbench.editor.labelFormat" : "short",
+    "workbench.colorTheme" : "Omni",
 
-    // ------- Workspace -------
-    "security.workspace.trust.untrustedFiles": "open",
+    // ------- Terminal -------
+    "terminal.integrated.fontFamily": "MesloLGS NF",
+    "terminal.integrated.fontSize": 14, 
+    "terminal.integrated.showExitAlert": false, // rockedseat
+    "terminal.integrated.env.osx" : { // Diego Rocketseat
+        "FIG_NEW_SESSION": "1"
+    },
+
+    // ------- Explorer ------- 
+    "explorer.confirmDragAndDrop": false, // Diego Rocketseat
+    "explorer.confirmDelete" : false, // Diego Rocketseat
+    "explorer.compactFolders" : false,
 
     // ------- Editor -------
-    "editor.suggestSelection": "first",
+    "editor.suggestSelection": "first", // Diego Rocketseat
+    "editor.parameterHints.enabled" : false, // Diego Rocketseat
+    "editor.renderLineHighlight" : "gutter", // Diego Rocketseat
+    "editor.semanticHighlighting.enabled": false,
     "editor.unicodeHighlight.ambiguousCharacters": false,
     "editor.linkedEditing": true,
     "editor.tabSize": 2,
-    "editor.fontSize": 16,
+    "editor.fontFamily": "Fira Code Retina", // Diego Rocketseat
+    "editor.fontLigatures": true, // Diego Rocketseat
+    "editor.fontSize": 12,
     "editor.lineHeight": 26,
     "editor.rulers": [80, 120], // rockedseat 
     "editor.codeActionsOnSave": {
         "source.fixAll.eslint": true
     },
     "diffEditor.ignoreTrimWhitespace": false,
-    // "editor.semanticHighlighting.enabled": false,
-    // "editor.rulers": [80, 120],
+    "material-icon-theme.languages.associations" : { // Diego Rocketseat
+        "dotenv" : "tune"
+    },
+    "editor.acceptSuggestionOnCommitCharacter" : false, // Diego Rocketseat
+    "editor.accessibilitySupport" : "off",
 
-    // ------- Terminal -------
-    "terminal.integrated.fontFamily": "MesloLGS NF",
-    "terminal.integrated.fontSize": 14,
-    "terminal.integrated.showExitAlert": false, // rockedseat 
+    //------- Emmet -------
+    "emmet.syntaxProfiles" : {
+        "javascript" : "jsx" // Diego Rocketseat
+    },
+    "emmet.includeLanguages" : {
+        "javascript" : "javascriptreact" // Diego Rocketseat
+    },
 
-    // ------- Explorer ------- 
-    "explorer.confirmDragAndDrop": false,
+    //------- Extensions -------
+    "extensions.ignoreRecommendations" : true, // Diego Rocketseat
 
     // ------- HTML -------
+
     // ------- CSS -------
 
     // ------- JS -------
     "javascript.updateImportsOnFileMove.enabled": "always", // rockedseat 
-
+    "javascript.suggest.autoImports" : true, // Diego Rocketseat
+    
     // ------- TS -------
-    "typescript.tsserver.log": "verbose", // rockedseat 
+    "typescript.tsserver.log": "off", // rockedseat 
+    "typescript.updateImportsOnFileMove.enabled" : "never", // Diego Rocketseat
+    "typescript.suggest.autoImports" : true, // Diego Rocketseat
+    
+    // ------- PRISMA -------
+    "[prisma]" : { // Diego Rocketseat
+        "editor.formatOnSave" : true
+    },
 
     // ------- GIT -------
     "git.enableSmartCommit": true,
@@ -56,37 +99,53 @@
         ".sequelizerc": "javascript",
         ".stylelintrc": "json",
         ".prettierrc": "json",
+        ".env.*" : "dotenv",
         "*.tsx": "typescriptreact"
     },
     
-    // ------- Material Icon Theme (MIT)
+    // ------- GitLens  -------
+    "gitlens.codeLens.recentChange.enabled" : false, // Diego Rocketseat
+    "gitlens.codeLens.authors.enabled" : false, // Diego Rocketseat
+    "gitlens.codeLens.enabled": false, // Diego Rocketseat
+    
+    // ------- Live Share  -------
+    "liveshare.featureSet" : "insiders", // Diego Rocketseat
+
+    // -------------- Material Icon Theme (MIT) --------------
     "material-icon-theme.activeIconPack": "nest", // rockedseat 
 
     //  ------- MIT Folders Config -------
-    "material-icon-theme.folders.associations": { // rockedseat 
-        "infra": "app",
-        "entities": "class",
-        "domain": "class",
-        "schemas": "class",
-        "typeorm": "database",
-        "repositories": "mappings",
-        "http": "container",
-        "migrations": "tools",
-        "modules": "components",
-        "implementations": "core",
-        "dtos": "typescript",
-        "fakes": "mock",
-        "websockets": "pipe",
-        "protos": "pipe",
-        "grpc": "pipe",
-        "providers": "include",
-        "subscribers": "messages",
-        "useCases": "controller",
-        "kafka": "scripts",
-        "mappers": "meta",
-        "_shared": "shared",
-        "eslint-config": "tools",
-        "kube": "kubernetes"
+    "material-icon-theme.folders.associations" : { // Diego Rocketseat
+        "adapters" : "contract",
+        "grpc" : "pipe",
+        "kube" : "kubernetes",
+        "main" : "lib",
+        "websockets" : "pipe",
+        "implementations" : "core",
+        "protos" : "pipe",
+        "entities" : "class",
+        "kafka" : "pipe",
+        "use-cases" : "functions",
+        "migrations" : "tools",
+        "schemas" : "class",
+        "useCases" : "functions",
+        "eslint-config" : "tools",
+        "typeorm" : "database",
+        "_shared" : "shared",
+        "mappers" : "meta",
+        "fakes" : "mock",
+        "modules" : "components",
+        "subscribers" : "messages",
+        "domain" : "class",
+        "protocols" : "contract",
+        "infra" : "app",
+        "view-models" : "views",
+        "presentation" : "template",
+        "dtos" : "typescript",
+        "http" : "container",
+        "providers" : "include",
+        "factories" : "class",
+        "repositories" : "mappings"
     },
 
     //  ------- MIT Icons Config -------
@@ -125,29 +184,5 @@
         "rocketseat"
     ],
 
-
-    // "material-icon-theme.folders.associations": {
-    //     "infra": "app",
-    //     "entities": "class",
-    //     "domain": "class",
-    //     "schemas": "class",
-    //     "typeorm": "databasse",
-    //     "repositories": "mappings",
-    //     "http": "container",
-    //     "migrations": "tools",
-    //     "modules": "components",
-    //     "implementations": "core",
-    //     "dtos": "typescript",
-    //     "fakes": "mock",
-    //     "websockets": "pipe",
-    //     "protos": "pipe",
-    //     "grpc": "pipe",
-    //     "providers": "include",
-    //     "subscribers": "messages",
-    //     "useCases": "controller",
-    //     "kafka": "scripts",
-    //     "mappers": "meta",
-    //     "_shared": "shared",
-    //     "eslint-config": "tools"
-    // },
+    // ------- END -------
 }
